@@ -7,19 +7,21 @@ layout: page
 
   <div class="col-md-8">
 
+
     {% include index/description.html %}
     {% include index/carousel.html title="Sample Items" %}
     
   </div>
   <div class="col-md-4">  
+    {% include feature/image.html objectid="watkins27" %}
 
-    {% include index/time.html %}
+  
 
-    {% include index/featured-terms.html field="subject" title="Top Subjects" btn-color="primary" %}
+    {% include index/featured-terms.html field="depth" title=" Depths" btn-color="outline-info" max=10 %}
 
-    {% include index/featured-terms.html field="location" title="Locations" btn-color="outline-secondary" %}
+    {% include index/featured-terms.html field="mine" title="Mines" btn-color="outline-secondary" max=4 %}
     
-    {% include index/objects.html %}
+   
 
   </div>
   <div class="col-md-12">
