@@ -1,9 +1,14 @@
 display_name,stub,dropdown_parent
 Home,/,
 Browse,/browse.html,
-Subjects,/subjects.html,
-Locations,/locations.html,
+Clouds,
+Depth Cloud,/depthcloud.html,Clouds
+Subjects,/subjects.html,Clouds
+Locations,/locations.html,Clouds
 Map,/map.html,
-Timeline,/timeline.html,
+Categories,
+Mines,/mines.html,Categories
+Depths,/depths.html,Categories
+Montana Mine History,https://en.wikipedia.org/wiki/Montana_Silver_Mining#Butte,Categories
 Data,/data.html,
 About,/about.html,

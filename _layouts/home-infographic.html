@@ -5,6 +5,12 @@ layout: page
 {%- assign items = site.data[site.metadata] | where_exp: 'item','item.objectid' -%}
 <div class="row">
 
+  <div class="col-md-12">
+
+    {% include feature/timelinejs.html %}
+
+    </div>
+
   <div class="col-md-8">
 
 
