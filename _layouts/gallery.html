@@ -1,0 +1,21 @@
+---
+# generic page layout
+layout: page
+gallery: true
+---
+{%- assign items = site.data[site.metadata] | where_exp: 'item','item.format contains "image" or item.format contains
+"video"' -%}
+{% if page.filter %}{%- assign items = items | where_exp: 'item',page.filter -%}{% endif %}
+
+<div class="container my-4">
+  {{ content }}
+
+  <div class="row my-5 py-5">
+    {% for item in items %}
+    <div class="col-4 col-md-3">
+      {% include feature/image-gallery-item.html %}
+    </div>
+    {% endfor %}
+  </div>
+
+</div>
